@@ -480,7 +480,9 @@ span {
 
 .contact {
     min-height: auto;
+    padding-top: 6rem;
     padding-bottom: 7rem;
+    background-color: var(--second-bg-color);
 }
 
 .contact form {
@@ -526,7 +528,7 @@ span {
     left: 0%;
     width: 0%;
     height: 100%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: 0.6rem;
     z-index: -1;
     transition: 0.5s;
@@ -560,7 +562,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
@@ -607,6 +609,62 @@ span {
 }
 
 .footer-iconTop a:hover i {
+    color: var(--main-color);
+}
+
+.footerNote {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+
+.footerNote-text p {
+    font-size: 1.6rem;
+}
+
+.footerNote-text a {
+    color: var(--main-color);
+}
+
+.footerNote-iconTop a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+    background: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    z-index: 1;
+}
+
+.footerNote-iconTop a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--second-bg-color);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.footerNote-iconTop a:hover::before {
+    width: 100%;
+}
+
+
+.footerNote-iconTop a i {
+    font-size: 2.4rem;
+    color: var(--bg-color);
+    transition: 0.5s;
+}
+
+.footerNote-iconTop a:hover i {
     color: var(--main-color);
 }
 
