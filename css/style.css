@@ -382,8 +382,9 @@ span {
 }
 
 .btn-box.btns {
-    display: inline-block;
-    width: 15rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .btn-box.btns a::before {
