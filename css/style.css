@@ -28,6 +28,39 @@ body{
     color: var(--text-color);
 }
 
+/* Global Styles */
+h1 {
+    font-size: 5.6rem; /* Adjust size as needed */
+    font-weight: 700;
+    line-height: 1.7;
+    color: var(--text-color); /* If you want the text color to be consistent too */
+}
+
+h2 {
+    font-size: 3.5rem; /* Adjust size as needed */
+    font-weight: 600;
+    margin: 1rem 0; /* Provide some spacing around headings */
+    color: var(--text-color);
+}
+
+h3 {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: 500;
+    margin: 0.5rem 0; /* Provide some spacing around headings */
+    color: var(--text-color);
+}
+
+ul {
+    list-style-type: none; /* Removes default list styling */
+    padding: 0;
+    font-size: 1.8rem; /* Adjust size as needed */
+    color: var(--text-color);
+}
+
+ul li {
+    margin-bottom: 0.5rem; /* Spacing between list items */
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -556,6 +589,68 @@ span {
 .contact form .btn-box.btns .btn {
     cursor: pointer;
 }
+
+/* Specific Styles for Dashboard and Graphs */
+/* Centering the main portfolio title */
+.portfolio > h1 {
+    text-align: center;
+    margin-top: 2rem; /* Adjust as needed for spacing */
+}
+
+/* Adjusting dashboard sections */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    gap: 20px; /* Space between columns */
+    margin-bottom: 4rem; /* Bottom margin for spacing */
+    text-align: center; /* Center text within each section */
+}
+
+/* Style adjustments for each dashboard section */
+.dashboard-section {
+    /* Optional additional styles for each section */
+    padding: 1rem; /* Add padding for spacing */
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .dashboard-container {
+        grid-template-columns: 1fr; /* Stack sections on smaller screens */
+    }
+}
+
+/* Graphs container to hold both bar and line graphs side by side */
+.graphs-container {
+    display: flex;
+    justify-content: space-around; /* Evenly spaces the child elements */
+    align-items: flex-start; /* Aligns items to the start of the flex container */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    gap: 2rem; /* Space between graphs if they wrap */
+}
+
+/* Individual graph styling */
+.graph {
+    flex: 1; /* Allows graphs to grow and fill available space */
+    min-width: calc(50% - 1rem); /* Sets minimum width for each graph */
+    text-align: center; /* Centers the title of each graph */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .graphs-container {
+        flex-direction: column; /* Stacks graphs on top of each other */
+    }
+    
+    .graph {
+        min-width: 100%; /* Full width for each graph */
+        margin-bottom: 2rem; /* Adds space between stacked graphs */
+    }
+    
+    .dashboard-section {
+        /* Optional: Adjust the text alignment for smaller screens if needed */
+    }
+}
+
 
 .footer {
     display: flex;
