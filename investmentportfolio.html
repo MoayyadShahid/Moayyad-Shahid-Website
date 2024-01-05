@@ -3,7 +3,7 @@
     <head>
         <!-- Head content -->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <link href='css/style.css' rel='stylesheet'>
+        <link href='css/dashboard.css' rel='stylesheet'>
         <link rel="icon" type="image/x-icon" href="/images/hi.png">
     </head>
     <body>
@@ -11,66 +11,72 @@
         <header class="header">
             <a href="index.html" class="logo">Moayyad Shahid</a>
             <div class="bx bx-menu" id="menu-icon"></div>
+
             <nav class="navbar">
+                <a href="#dashboard-container" class="active">Strategy</a>
+                <a href="#graphs-wrapper">Results</a>
                 <div class="nav-box">
-                    <a href="index.html" class="btn">Home</a>
+                    <a href="index.html" class="btn">Home</a>                         
                 </div>
             </nav>
         </header>
 
         <!-- Main Portfolio Section -->
-        <section class="portfolio">
+        <section id="dashboard-container" class="dashboard portfolio-main">
             <h1>Investment <span>Portfolio</span></h1>
 
             <!-- Container for three columns -->
             <div class="dashboard-container">
                 <!-- Investment Philosophy Section -->
                 <section class="investment-philosophy">
-                    <h2>Investment Philosophy</h2>
+                    <h2>Investment <span>Philosophy</span></h2>
                     <ul>
-                        <li>point 1</li>
-                        <li>point 2</li>
-                        <li>point 3</li>
+                        <li>Buy Quality Businesses</li>
+                        <li>Exercise Valuation Discipline</li>
+                        <li>Keep a Long Term Focus</li>
+                        <li>Maintain Broad Diversification</li>
+                        <li>Use Leverage Prudently</li>
                     </ul>
                 </section>
 
                 <!-- Investment Process Section -->
                 <section class="investment-process">
-                    <h2>Investment Process</h2>
+                    <h2>Investment <span>Process</span></h2>
                     <ul>
-                        <li>point 1</li>
-                        <li>point 2</li>
-                        <li>point 3</li>
+                        <li>Construct Global Perspective to Achieve the Highest Possible Returns</li>
+                        <li>Maintain Broad Market Exposure</li>
+                        <li>Actively Manage Single Stock/Sector Exposures</li>
+                        <li>Portfolio Construction Agnostic to Benchmark Weights</li>
+                        <li>Keep Reserve Capital To Be Able To Aggressively Buy Amid Big Market Corrections</li>
+                        <li>Use Leverage Modestly and Opportunistically During Big/Prolonged Market Drops</li>
                     </ul>
                 </section>
 
                 <!-- Investment Objectives Section -->
                 <section class="investment-objectives">
-                    <h2>Investment Objectives</h2>
+                    <h2>Investment <span>Objective</span></h2>
                     <ul>
-                        <li>point 1</li>
-                        <li>point 2</li>
-                        <li>point 3</li>
+                        <li>To Produce Top-Decile Returns Over Rolling 3-Year Periods And Widely Outperform The World’s Major Equity Benchmarks, Particularly the S&P 500 Index</li>
                     </ul>
                 </section>
             </div>
 
+            
             <!-- Graphs Section -->
-            <section class="graphs-container">
-                <div class="graph">
-                    <h3>Bar Graph</h3>
-                    <!-- Insert Bar Graph Here -->
-                </div>
-                <div class="graph">
-                    <h3>Line Graph</h3>
-                    <!-- Insert Line Graph Here -->
-                </div>
-                <!-- Pie Chart can be kept in a separate row or adjusted as needed -->
-                <div class="graph">
-                    <h3>Pie Chart of Portfolio Sectors</h3>
-                    <!-- Insert Pie Chart Here -->
-                </div>
-            </section>
+            <div id="graphs-wrapper" class="graphs-wrapper">
+                <section class="graphs-container">
+                    <div class="graph">
+                        <h3>Investment Performance </h3>
+                        <h3>Inception (7th March 2023) - Present</h3>
+                        <img src="/images/grossperformance.png">
+                    </div>
+                    <div class="graph">
+                        <h3>Monthly Returns</h3>
+                        <h3>Inception (7th March 2023) - Present</h3>
+                        <img src="/images/monthlyperformance.png"
+                    </div>
+                </section>
+            </div>
         </section>
 
         <!-- Footer Design -->
