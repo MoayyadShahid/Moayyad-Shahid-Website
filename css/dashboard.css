@@ -421,7 +421,7 @@ span {
     display: flex;
     flex-direction: column; /* Stack children vertically */
     align-items: center; /* Center-align the children */
-    margin-top: 0rem;
+    margin-top: 0.25rem;
     padding-top: 0;
 }
 
